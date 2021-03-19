@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Scroll_Piechart">
+
+
+        <TextView
+            android:id="@+id/text_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Data Analyst"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="About Data Analyst"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_para"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_about"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/text"
+            android:textAlignment="viewStart"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_market"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_para"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Market Demand"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/image_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_market"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/circle_piechart" />
+
+        <ImageView
+            android:id="@+id/image_square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_market"
+            android:layout_margin="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/image_circle"
+            android:background="@drawable/square_shape" />
+
+        <ImageView
+            android:id="@+id/image_square1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_square"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/image_circle"
+            android:background="@drawable/square_shape" />
+
+        <ImageView
+            android:id="@+id/image_square2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_square1"
+            android:layout_margin="25dp"
+            android:layout_toRightOf="@+id/image_circle"
+            android:background="@drawable/square_shape" />
+
+
+        <ImageView
+            android:id="@+id/image_square3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_market"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/image_square"
+            android:background="@drawable/square_shape" />
+
+        <ImageView
+            android:id="@+id/image_square4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_square3"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/image_square1"
+            android:background="@drawable/square_shape" />
+
+        <ImageView
+            android:id="@+id/image_square5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_square4"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/image_square2"
+            android:background="@drawable/square_shape" />
+
+        <TextView
+            android:id="@+id/text_compnayrec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_circle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Company Recruit"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_below="@id/text_compnayrec" />
+
+
+        <TextView
+            android:id="@+id/text_DataScie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recyclerView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/datascientist"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/text_DataScieSalr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_DataScie"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:text="₹698,413"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+        <TextView
+            android:id="@+id/text_DataScieSalr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_DataScie"
+            android:layout_marginStart="@dimen/_100sdp"
+            android:layout_marginTop="3dp"
+            android:text="₹60,678"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/text_DataScieSalr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_DataScie"
+            android:layout_marginStart="@dimen/_160sdp"
+            android:layout_marginTop="3dp"
+            android:text="₹35,000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_avgsal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_DataScieSalr"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="3dp"
+            android:text="Avg. Salary"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_DataScieSalr"
+            android:layout_marginStart="@dimen/_100sdp"
+            android:layout_marginTop="0dp"
+            android:text="Bonus"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/text_sharing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_DataScieSalr"
+            android:layout_marginStart="@dimen/_160sdp"
+            android:layout_marginTop="0dp"
+            android:text="Profit Sharing"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/img_graph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_avgsal"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:src="@drawable/graph" />
+
+        <TextView
+            android:id="@+id/text_courses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_graph"
+            android:layout_marginStart="20dp"
+            android:text="@string/course"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/mobile_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_below="@id/text_courses">
+        </ListView>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/red"
+            android:background="@drawable/login_button"
+            android:layout_below="@id/mobile_list"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+

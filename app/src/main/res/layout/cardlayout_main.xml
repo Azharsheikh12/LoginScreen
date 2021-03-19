@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVCourse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/nexttoGrid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_below="@id/idRVCourse"
+        android:background="@drawable/login_button"
+        android:backgroundTint="@color/red"
+        android:text="LOGIN TO NEXT"
+        android:textColor="@color/white" />
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
